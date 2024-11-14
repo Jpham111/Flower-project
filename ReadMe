@@ -1,0 +1,57 @@
+
+
+# Fractal Tree Visualization with Python Turtle
+
+This project is a Python Turtle Graphics visualization that creates a colorful fractal tree. Using recursion, this code generates a tree-like structure with branches, displaying a mesmerizing pattern in green, yellow, and purple.
+
+## Table of Contents
+- [Overview](#overview)
+- [Installation](#installation)
+- [How It Works](#how-it-works)
+- [Usage](#usage)
+- [Customization](#customization)
+- [License](#license)
+
+## Overview
+
+This project leverages Python's Turtle Graphics module to create a fractal tree pattern. The tree grows by recursively creating branches, where each branch splits into two smaller branches, building a structure resembling a tree. The visual is created in green, yellow, and purple on a black background.
+
+## Installation
+
+1. **Ensure Python is installed**: This project requires Python 3.x.
+2. **Install Turtle Graphics (if necessary)**: Turtle is included with standard Python distributions. If you're using an environment where it is not available, install it by running:
+   ```bash
+   pip install PythonTurtle
+   ```
+
+## How It Works
+
+The code defines a `tree` function that:
+1. Moves the turtle forward to draw the main trunk.
+2. Creates branches by calling itself recursively, reducing the branch length by a fraction of the original length (3/4).
+3. Draws small circles on the branch ends in different colors to resemble leaves.
+
+The recursive function `tree()` stops when the branch length is below a certain threshold (less than 10), completing the fractal tree structure.
+
+## Usage
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Jpham111/flower-project
+   ```
+2. Run the script:
+   ```bash
+   python fractal_tree.py
+   ```
+
+Upon running, a Turtle Graphics window will open, displaying a fractal tree on a black background.
+
+## Customization
+
+- **Change Colors**: Modify `tu.color("color_name")` in the code to set different colors for branches and leaves.
+- **Adjust the Tree Shape**: To create different tree shapes, adjust the angle values in `tu.left(30)` and `tu.right(60)` or modify the recursive factor `3 * i / 4`.
+
+## License
+
+This project is licensed under the MIT License. Feel free to use and modify the code.
+
